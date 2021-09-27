@@ -1,0 +1,22 @@
+{
+  "name": "storybook-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/html": "^6.3.8",
+    "babel-loader": "^8.2.2"
+  },
+  "dependencies": {
+    "@storybook/addon-a11y": "^6.3.8",
+    "@storybook/addons": "^6.3.8"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}

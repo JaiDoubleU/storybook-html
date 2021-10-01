@@ -2,18 +2,17 @@ import { createButton } from './Button';
 import { storiesOf, addDecorator } from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
 
+
 addDecorator(withA11y)
 
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   argTypes: {
     label: { control: 'text' },
-    primary: { control: 'boolean' },
-    backgroundColor: { control: 'color' },
+    type: {control: 'text'},
     size: {
-      control: { type: 'select', options: ['small', 'medium', 'large'] },
+      control: { type: 'select', options: ['small', 'default', 'large'] },
     },
-    onClick: { action: 'onClick' },
   },
 };
 
@@ -25,23 +24,35 @@ const Template = ({ label, ...args }) => {
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
+  size: 'default',
+  type: 'primary',
   label: 'Button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
+  type: 'secondary',
+  size: 'default',
+};
+
+export const Link = Template.bind({});
+Link.args = {
+  label: 'Button',
+  type: 'link',
+  size: 'default'
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   label: 'Button',
+  type: 'secondary',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
+  type: 'secondary'
 };

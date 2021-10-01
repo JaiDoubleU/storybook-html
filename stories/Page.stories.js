@@ -3,7 +3,7 @@ import * as HeaderStories from './Header.stories';
 
 
 export default {
-  title: 'Example/Page',
+  title: 'Pages',
   argTypes: {
     onLogin: { action: 'onLogin' },
     onLogout: { action: 'onLogout' },

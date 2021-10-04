@@ -19,5 +19,14 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
                 </g>
             </g>
         </svg>`;
-  return '<header> <div  class="navbar">' +logo +'<a href="" class="navbar-link"><i class="fas fa-sign-in"></i> Sign In</a></div></header>'; 
+    
+    var rightMenu;
+    if (user) {
+        rightMenu = '<span><a href="" aria-label=”User Menu” class="navbar-link"><i class="fas fa-user"></i> </a><a href="" aria-label=”Sign Out” class="navbar-link"><i class="fas fa-sign-out"></i> </a></span>';
+    } else {
+        rightMenu = '<span><a href="" aria-label=”Sign In” class="navbar-link"><i class="fas fa-sign-in"></i> </a></span>';
+    }
+    var headerHTML = '<header> <div  class="navbar">' + logo +rightMenu +'</div></header>';
+    
+    return headerHTML; 
 };

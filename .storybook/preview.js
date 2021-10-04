@@ -1,4 +1,5 @@
 import '../stories/css/styleguide.css';
+import '../node_modules/@fortawesome/fontawesome-pro/css/all.min.css';
 import { addDecorator} from '@storybook/html';
 import { addons } from '@storybook/addons';
 import { withCssResources } from '@storybook/addon-cssresources';

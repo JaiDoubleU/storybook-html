@@ -31,3 +31,6 @@ LoggedIn.args = {
   user: {},
 };
 
+export const LoggedOut = Template.bind({});
+LoggedOut.args = {
+};

@@ -9868,7 +9868,7 @@
   "version" "0.7.3"
 
 "sourceoftruth@github:JaiDoubleU/SourceOfTruth":
-  "resolved" "git+ssh://git@github.com/JaiDoubleU/SourceOfTruth.git#7a0b71e5bff1f5e894fe2bb60f1667c895bff088"
+  "resolved" "git+ssh://git@github.com/JaiDoubleU/SourceOfTruth.git#56638e56ffa2bc60f9f7017130bb68c97598e0b4"
   "version" "1.0.0"
   dependencies:
     "node-sass" "^6.0.1"

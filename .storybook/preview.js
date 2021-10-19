@@ -1,33 +1,36 @@
 import '../stories/css/styleguide.css';
 import '../node_modules/@fortawesome/fontawesome-pro/css/all.min.css';
+import '../node_modules/sourceoftruth/css/index.css';
+
+import { Loader } from '@storybook/components';
+
 import { addDecorator} from '@storybook/html';
 import { addons } from '@storybook/addons';
 import { withCssResources } from '@storybook/addon-cssresources';
 
-export default {
-  title: "CssResources",
-  parameters: {
-    cssresources: [
+export const parameters = {
+  backgrounds: {
+    default: 'dark',
+    values: [
       {
-        id: `bluetheme`,
-        code: `<style>body { background-color: lightblue; }</style>`,
-        picked: false,
-        hideCode: false, // Defaults to false, this enables you to hide the code snippet and only displays the style selector
+        name: 'dark',
+        value: '#57535A',
+      },
+      {
+        name: 'light',
+        value: '#eeeeee',
       },
     ],
   },
-  decorators: [withCssResources],
-};
-
-
-export const parameters = {
   options: {
     storySort: {
       method: 'alphabetical',
-      order: ['Getting Started','Introduction', 'Roadmap', 'Components'],
+      order: ['Getting Started','Tokens','Introduction', 'Roadmap', 'Components'],
     },
   },
 };
+
+export const decorators = [withCssResources]
 // export const parameters = {
 //   actions: { argTypesRegex: "^on[A-Z].*" },
 //   controls: {

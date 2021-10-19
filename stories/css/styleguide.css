@@ -1,3 +1,4 @@
+
 html {
     line-height: 1.15;
     font-family: sans-serif;
@@ -313,9 +314,6 @@ html a {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-body {
-    background-color: #d5dae6;
-}
 
 body,
 button,
@@ -1064,8 +1062,6 @@ fieldset[disabled] .button-info.active {
 
 html,
 body {
-    background-color: #57535A;
-    color: #fefefe;
     margin-top: 15px;
 }
 

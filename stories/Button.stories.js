@@ -1,12 +1,12 @@
 import { createButton } from './Button';
+
 import { storiesOf, addDecorator } from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
-
 
 addDecorator(withA11y)
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/Buttons',
   argTypes: {
     label: { control: 'text' },
     type: {control: 'text'},
@@ -22,7 +22,7 @@ const Template = ({ label, ...args }) => {
   return createButton({ label, ...args });
 };
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({}) ;
 Primary.args = {
   size: 'default',
   type: 'primary',

@@ -1,0 +1,45 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/';
+import { color } from './Colors';
+import { createColorPalette } from './ColorPalette';
+import { createPalette } from './Colors';
+
+<Meta title="Tokens/Colors" />
+
+<h3>Branding</h3>
+<ColorPalette>
+  <ColorItem title="Primary" subtitle="Enverus Green" colors={[color.branding.primary]} />
+  <ColorItem title="Secondary" subtitle="Enverus Light Green" colors={[color.branding.secondary]} />
+  <ColorItem title="Tertiary" subtitle="Enverus Grey" colors={[color.branding.tertiary]} />
+</ColorPalette>
+
+<h3>Functional Colors</h3>
+<ColorPalette>
+  <ColorItem title="Info Color" subtitle="Informational " colors={[color.functional.info]} />
+  <ColorItem title="Success Color" subtitle="Success" colors={[color.functional.success]} />
+  <ColorItem title="Warning Color" subtitle="Warning" colors={[color.functional.warning]} />
+  <ColorItem title="Error Color" subtitle="Error" colors={[color.functional.error]} />
+  <ColorItem title="Info Background" subtitle="Info Background" colors={[color.functional.infoBG]} />
+  <ColorItem title="Success Background" subtitle="Success Background" colors={[color.functional.successBG]} />
+  <ColorItem title="Warning Background" subtitle="Warning Background" colors={[color.functional.warningBG]} />
+  <ColorItem title="Error Background" subtitle="Error Background" colors={[color.functional.errorBG]} />
+ </ColorPalette>
+
+<h3>Neutral Colors</h3>
+<ul>
+  <ColorItem title="White" subtitle="#FFFFFF " colors={[color.neutrals.white]} />
+  <ColorItem title="Grey 1" subtitle="#EFEFEF " colors={[color.neutrals.grey1]} />
+  <ColorItem title="Grey 2" subtitle="#DDDDDE" colors={[color.neutrals.grey2]} />
+  <ColorItem title="Grey 3" subtitle="#CDCBCE" colors={[color.neutrals.grey3]} />
+  <ColorItem title="Grey 4" subtitle="#BCBABD" colors={[color.neutrals.grey4]} />
+  <ColorItem title="Grey 5" subtitle="#ABA9AD" colors={[color.neutrals.grey5]} />
+  <ColorItem title="Grey 6" subtitle="#9A989C" colors={[color.neutrals.grey6]} />
+  <ColorItem title="Grey 7" subtitle="#89878C" colors={[color.neutrals.grey7]} />
+  <ColorItem title="Grey 8" subtitle="#79757B" colors={[color.neutrals.grey8]} />
+  <ColorItem title="Grey 9" subtitle="#68646B" colors={[color.neutrals.grey9]} />
+  <ColorItem title="Grey 10" subtitle="#57535A" colors={[color.neutrals.grey10]} />
+  <ColorItem title="Grey 11" subtitle="#4E4B51" colors={[color.neutrals.grey11]} />
+  <ColorItem title="Grey 12" subtitle="#3D3A3F" colors={[color.neutrals.grey12]} />
+  <ColorItem title="Grey 13" subtitle="#2C2A2D" colors={[color.neutrals.grey13]} />
+  <ColorItem title="Grey 14" subtitle="#1A191B" colors={[color.neutrals.grey14]} />
+   <ColorItem title="Black" subtitle="#000000 " colors={[color.neutrals.black]} />
+ </ul>

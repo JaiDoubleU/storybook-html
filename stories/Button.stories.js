@@ -1,5 +1,3 @@
-import { createButton } from './Button';
-
 import { storiesOf, addDecorator } from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
 
@@ -13,13 +11,12 @@ export default {
     size: {
       control: { type: 'select', options: ['small', 'default', 'large'] },
     },
+    icon: {control: 'text' }
   },
 };
 
 const Template = ({ label, ...args }) => {
-  // You can either use a function to create DOM elements or use a plain html string!
-  // return `<div>${label}</div>`;
-  return createButton({ label, ...args });
+    return '<button class="button button-' +args.type +' button-' +args.size +'">' +label +'</button>'; 
 };
 
 export const Primary = Template.bind({}) ;

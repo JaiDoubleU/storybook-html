@@ -1,3 +1,4 @@
+// Custom storybook theme
 import { create } from '@storybook/theming';
 import EnverusLogoWhite from '../stories/assets/enverus-logo-white.svg';
 import EnverusLogoBlack from '../stories/assets/enverus-logo-black.svg';

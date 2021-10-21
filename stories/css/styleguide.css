@@ -1,4 +1,17 @@
 
+html, body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Cantarell", "Helvetica Neue", "Helvetica", sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+}
+.sb-show-main * {
+        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Cantarell", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.square {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
 html {
     line-height: 1.15;
     font-family: sans-serif;
@@ -1060,11 +1073,6 @@ fieldset[disabled] .button-info.active {
     background-color: #fff;
 }
 
-html,
-body {
-    margin-top: 15px;
-}
-
 section {
     border-top: 1px solid #ffffff25;
 }
@@ -1075,4 +1083,4 @@ section {
 .sidebar-subheading.css-ulso1l {
     font-weight: normal;
     letter-spacing: normal;
-}
+} 

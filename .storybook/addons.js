@@ -7,4 +7,6 @@ import enverusTheme from './enverusTheme';
 // global
 addons.setConfig({
   theme: enverusTheme,
+  showPanel: true,
+  panelPosition: "bottom"
 });

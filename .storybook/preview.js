@@ -1,14 +1,21 @@
 import '../stories/css/styleguide.css';
-import '../node_modules/@fortawesome/fontawesome-pro/css/all.min.css';
 import '../node_modules/sourceoftruth/css/index.css';
 
-import { Loader } from '@storybook/components';
-
-import { addDecorator} from '@storybook/html';
 import { addons } from '@storybook/addons';
 import { withCssResources } from '@storybook/addon-cssresources';
+import enverusTheme from './enverusTheme';
+
+addons.setConfig({
+  theme: enverusTheme,
+  showPanel: true,
+  panelPosition: "bottom"
+});
 
 export const parameters = {
+  addons: {
+    showPanel: true,
+    panelPosition: "bottom",
+  },
   backgrounds: {
     default: 'dark',
     values: [
@@ -31,21 +38,3 @@ export const parameters = {
 };
 
 export const decorators = [withCssResources]
-// export const parameters = {
-//   actions: { argTypesRegex: "^on[A-Z].*" },
-//   controls: {
-//     matchers: {
-//       color: /(background|color)$/i,
-//       date: /Date$/,
-//     },
-//   },
-//   options: {
-//     // storySort: {
-//     //   // method: '',
-//     //   // locales: 'en-US', 
-//     //   order: ['Introduction','Roadmap',"GettingStarted","Components"],
-//     // },
-//     storySort: (a, b) =>
-//      a[1].id === b[1].id ? 0 : a[1].id.localeCompare(b[1].id, undefined, { numeric: false }),
-//   },
-// }

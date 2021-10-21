@@ -1,6 +1,4 @@
 import './header.css';
-import { createButton } from './Button';
-
 export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
   const logo =
    ` <?xml version="1.0" encoding="UTF-8"?>
@@ -22,11 +20,11 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
     
     var rightMenu;
     if (user) {
-        rightMenu = '<span><a href="" aria-label=”User Menu” class="navbar-link"><i class="fas fa-user"></i> </a><a href="" aria-label=”Sign Out” class="navbar-link"><i class="fas fa-sign-out"></i> </a></span>';
+        rightMenu = '<span><a href="" aria-label=”User Menu” class="navbar-link"><span class="material-icons md-36">person</span></a><a href="" aria-label=”Sign Out” class="navbar-link"><span class="material-icons md-36">logout</span></a></span>';
     } else {
-        rightMenu = '<span><a href="" aria-label=”Sign In” class="navbar-link"><i class="fas fa-sign-in"></i> </a></span>';
+        rightMenu = '<span><a href="" aria-label=”Sign In” class="navbar-link"><span class="material-icons md-36">login</span></a></span>';
     }
-    var headerHTML = '<header> <div  class="navbar">' + logo +rightMenu +'</div></header>';
+    var headerHTML = '<header class="navbar">' + logo +rightMenu +'</header>';
     
     return headerHTML; 
 };

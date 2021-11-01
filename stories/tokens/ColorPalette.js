@@ -1,4 +1,4 @@
-import './button.css';
+import '../components/buttons/button.css';
 import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/';
 import { addDecorator } from '@storybook/html';
 

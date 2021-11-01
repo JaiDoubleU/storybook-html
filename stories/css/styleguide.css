@@ -1,3 +1,17 @@
+/* Sidebar Overrides */
+.sidebar-subheading {
+	text-transform: none !important;
+}
+
+svg.sidebar-svg-icon {
+	color: pink;
+}
+
+/* Panel Overrides */
+.simplebar-content {
+	color: #1b2024 !important;
+}
+
 html,
 body {
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI","Ubuntu", "Cantarell", "Helvetica Neue", "Helvetica", sans-serif !important;

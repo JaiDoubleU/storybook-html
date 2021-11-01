@@ -1,5 +1,6 @@
 import '../stories/css/styleguide.css';
-import '../node_modules/sourceoftruth/css/index.css';
+import '../stories/css/styles.min.css';
+import '../node_modules/sourceoftruth/css/styles.min.css';
 
 import { addons } from '@storybook/addons';
 import { withCssResources } from '@storybook/addon-cssresources';

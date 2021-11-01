@@ -34,3 +34,8 @@
 .button-large {
   font-size: 16px;
 }
+
+.button-error {
+  color: 000;
+  background-color: #D64200;
+}

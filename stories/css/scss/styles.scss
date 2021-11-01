@@ -1,0 +1,27 @@
+@import "variables";
+
+@import '../../../node_modules/sourceoftruth/scss/styles';
+
+.alert {
+    padding: 10px;
+}
+
+.alert-info {
+    background-color: $infoBG;
+    color: $black;
+}
+
+.alert-success {
+    background-color: $successBG;
+    color: $black;
+}
+
+.alert-warning {
+    background-color: $warningBG;
+    color: $black;
+}
+
+.alert-error {
+    background-color: $errorBG;
+    color: $black;
+}

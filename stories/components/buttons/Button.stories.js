@@ -1,6 +1,8 @@
 import '../../../node_modules/sourceoftruth/css/styles.min.css';
 
-import { storiesOf, addDecorator } from '@storybook/html';
+import { addDecorator } from '@storybook/html';
+import { withDesign } from 'storybook-addon-designs'
+
 import { withA11y } from '@storybook/addon-a11y';
 addDecorator(withA11y)
 
@@ -14,6 +16,13 @@ export default {
     },
     icon: {control: 'text' }
   },
+  decorators: [withDesign],
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/rrwf9Uaco4wEK1cMQALPpi/?node-id=44%3A331',
+    },
+  }
 };
 
 const Template = ({ label, ...args }) => {

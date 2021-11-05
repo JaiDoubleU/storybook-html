@@ -3,8 +3,25 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/';
 import { addDecorator } from '@storybook/html';
 
 import { withA11y } from '@storybook/addon-a11y';
+import { withDesign } from 'storybook-addon-designs'
 
 addDecorator(withA11y);
+addDecorator(withDesign);
+
+export default {
+  title: 'Color Palette',
+  component: ColorPalette,
+    decorators: [withDesign],
+    parameters: [{
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File',
+        },
+    }]
+}
+
+
+
 
 // export const createColorPalette = ({}) => {
 //   return '<ColorPalette>' +

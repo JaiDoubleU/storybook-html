@@ -25,3 +25,48 @@
     background-color: $errorBG;
     color: $black;
 }
+
+/* typography */
+.text-default {
+    font-size: $default-font-size !important;
+    line-height: 1.4 !important;
+}
+
+.text-default-bold {
+    font-size: $default-font-size !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+.text-small {
+    font-size: $small-font-size !important;
+    line-height: 1.4 !important;
+}
+
+.text-small-bold {
+    font-size: $small-font-size !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+.text-xsmall {
+    font-size: $xsmall-font-size !important;
+    line-height: 1.4 !important;
+}
+
+.text-xsmall-bold {
+    font-size: $xsmall-font-size !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+.text-large {
+    font-size: $large-font-size !important;
+    line-height: 1.4 !important;
+}
+
+.text-large-bold {
+    font-size: $large-font-size !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}

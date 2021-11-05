@@ -30,6 +30,28 @@ export const parameters = {
       },
     ],
   },
+  html: {
+    prettier: {
+        "arrowParens": "always",
+        "bracketSameLine": true,
+        "bracketSpacing": true,
+        "embeddedLanguageFormatting": "auto",
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxSingleQuote": false,
+        "printWidth": 144,
+        "proseWrap": "preserve",
+        "quoteProps": "as-needed",
+        "rangeStart": 0,
+        "requirePragma": false,
+        "semi": true,
+        "singleQuote": false,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "useTabs": false,
+        "vueIndentScriptAndStyle": false,
+    },
+  },
   options: {
     storySort: {
       method: 'alphabetical',

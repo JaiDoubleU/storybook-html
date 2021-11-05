@@ -36,7 +36,7 @@ export const parameters = {
         "bracketSameLine": true,
         "bracketSpacing": true,
         "embeddedLanguageFormatting": "auto",
-        "htmlWhitespaceSensitivity": "css",
+        "htmlWhitespaceSensitivity": "ignore",
         "insertPragma": false,
         "jsxSingleQuote": false,
         "printWidth": 144,

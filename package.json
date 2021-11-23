@@ -14,7 +14,7 @@
     "@storybook/storybook-deployer": "^2.8.10",
     "@whitespace/storybook-addon-html": "^5.0.0",
     "babel-loader": "^8.2.2",
-    "chromatic": "^5.10.1",
+    "chromatic": "^6.0.6",
     "storybook-addon-run-script": "^0.1.4"
   },
   "dependencies": {

@@ -6,7 +6,7 @@ import { withA11y } from '@storybook/addon-a11y';
 addDecorator(withA11y)
 
 export default {
-    title: 'Components/Inputs',
+    title: 'Components/Form Elements/Inputs',
     argTypes: {
         type: {
             control: 'text'
@@ -51,7 +51,7 @@ SearchInput.args = {
 
 export const NumberInput = Template.bind({});
 NumberInput.args = {
-    value: '2021/12/31',
+    value: '75',
     placeholder: "placeholder text",
     size: 'default',
     type: 'number',
@@ -67,7 +67,7 @@ DateInput.args = {
 
 export const ColorInput = Template.bind({});
 ColorInput.args = {
-    placeholder: "PlaceholderTtext",
+    placeholder: "",
     value: '#eee',
     size: 'default',
     type: 'color',

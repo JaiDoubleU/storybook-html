@@ -70,3 +70,17 @@
     font-weight: 500 !important;
     line-height: 1.4 !important;
 }
+
+label {
+    color: #fff;
+}
+
+label[required=true]:before {
+    color: $errorBG;
+    content: "*";
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 0.75;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}

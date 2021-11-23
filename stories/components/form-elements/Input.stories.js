@@ -1,28 +1,32 @@
-import './inputs.css';
-
 import { storiesOf, addDecorator} from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
 
-addDecorator(withA11y)
+addDecorator(withA11y) 
 
 export default {
     title: 'Components/Form Elements/Inputs',
+    parameters: {
+        a11y: {
+            config: {
+                rules: [{
+                    id: 'label',
+                    enabled: true,
+                    reviewOnFail: true
+                }],
+            },
+        },
+    },
     argTypes: {
-        type: {
-            control: 'text'
-        },
-        value: {
-            control: 'text'
-        },
+        type: { control: 'text'  },
+        id: {control: 'text'},
+        value: { control: 'text'  },
         size: {
             control: {
                 type: 'select',
                 options: ['small', 'default', 'large']
             },
         },
-        icon: {
-            control: 'text'
-        }
+        icon: { control: 'text'  }
     },
 };
 

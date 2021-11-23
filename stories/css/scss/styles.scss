@@ -71,6 +71,21 @@
     line-height: 1.4 !important;
 }
 
+.text-info {
+    color: $info;
+}
+
+.text-success {
+    color: $success;
+}
+
+.text-warning {
+    background-color: $warning;
+}
+
+.text-error {
+    color: $error;
+}
 label {
     color: #fff;
 }
@@ -78,9 +93,29 @@ label {
 label[required=true]:before {
     color: $errorBG;
     content: "*";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     line-height: 0.75;
     padding-right: 0.5rem;
     vertical-align: middle;
 }
+
+ input {
+     background-color: #4e4b51;
+     border: none;
+     border-radius: 3px;
+     display: block;
+     padding: 6px 12px;
+     width: 100%;
+ }
+
+ input[type='color'] {
+     background-color: transparent;
+     height: 2rem;
+     padding: 0;
+     width: 2rem;
+ }
+
+ input[hasError='true'] {
+     border: 1px solid $error;
+ }

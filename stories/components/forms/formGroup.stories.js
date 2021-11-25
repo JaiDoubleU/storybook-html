@@ -31,7 +31,12 @@ const FormGroupTemplate = ({
     if (args.hasError == 'true') {
         fieldHasError = 'hasError = "true"';
     }
-    return '<label for="' + args.fieldName + '"class="' + args.feedbackClass + ' required="' + args.required + '">' + label + '</label>' +
+    var isRequired;
+    if (args.required == 'true') {
+        isRequired = 'required = "true" ';
+    }
+    
+    return '<label ' +isRequired +' for="' + args.fieldName + '"class="' + args.feedbackClass + '">' + label + '</label>' +
         ' <input ' +fieldHasError + 'type="' + args.fieldId + '" type="' + args.type + '" value="' + args.value + '" name="' + args.fieldName + '" placeholder="' + args.placeholder + '" />' +
         ' <small class="' +args.feedbackClass +'">' +args.feedbackText +'</small>';
 };
@@ -44,7 +49,8 @@ FormGroupDefault.args = {
     placeholder: "placeholder text",
     size: 'default',
     type: 'text',
-    label: 'Field Label',
+    required: 'false',
+    label: 'Field Name ',
     feedbackText: 'This is some help text',
     feedbackClass:''
 };
@@ -58,7 +64,7 @@ FormGroupRequired.args = {
     size: 'default',
     type: 'text',
     required: 'true',
-    label: 'Field Label',
+    label: 'Field Name ',
     feedbackText: 'This is some help text',
     feedbackClass: ''
 };
@@ -72,7 +78,7 @@ FormGroupHasError.args = {
     size: 'default',
     type: 'text',
     required: 'true',
-    label: 'Field Label',
+    label: 'Field Name ',
     hasError: 'true',
     feedbackText: 'This is some help text',
     feedbackClass: 'text-error'

@@ -1,0 +1,25 @@
+@import "variables";
+
+.alert {
+    padding: 10px;
+}
+
+.alert-info {
+    background-color: $info-bg;
+    color: $black;
+}
+
+.alert-success {
+    background-color: $success-bg;
+    color: $black;
+}
+
+.alert-warning {
+    background-color: $warning-bg;
+    color: $black;
+}
+
+.alert-error {
+    background-color: $error-bg;
+    color: $black;
+}

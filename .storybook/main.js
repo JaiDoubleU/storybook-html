@@ -1,5 +1,6 @@
 module.exports = {
   "stories": [
+    "../stories/Introduction.stories.mdx",
     "../stories/**/*.stories.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
@@ -8,5 +9,6 @@ module.exports = {
     "@storybook/addon-essentials",
     '@storybook/addon-a11y',
     "@storybook/addon-cssresources",
-  ]
+  ],
+    "framework": "@storybook/html"
 }

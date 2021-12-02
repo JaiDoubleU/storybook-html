@@ -1,34 +1,56 @@
 $primary: #56bc2f;
-$secondary: #A0EF6E;
-$tertiary: #57535A;
-$info: #007DB8;
+$secondary: #CDCBCE;
+$tertiary: #13322B;
+
+$info: #329DFF;
 $success: #56bc2f;
-$warning: #FFC035;
-$error: #F9592F;
-$infoBG: #D9EFFF;
-$successBG: #DFF1D8;
-$warningBG: #F5E9CF;
-$errorBG: #FBB8A6;
+$warning: #FFBA00;
+$error: #FF5444;
+
+$info-bg: #D9EDFF;
+$success-bg: #DFF1D8;
+$warning-bg: #FFEEC2;
+$error-bg: #FFD4D1;
 
 $white: #FFFFFF;
-$grey1: #EFEFEF;
-$grey2: #DDDDDE;
-$grey3: #CDCBCE;
-$grey4: #BCBABD;
-$grey5: #ABA9AD;
-$grey6: #9A989C;
-$grey7: #89878C;
-$grey8: #79757B;
-$grey9: #68646B;
-$grey10: #57535A;
-$grey11: #4E4B51;
-$grey12: #3D3A3F;
-$grey13: #2C2A2D;
-$grey14: #1A191B;
+$grey14: #EFEFEF;
+$grey13: #DDDDDE;
+$grey12: #CDCBCE;
+$grey11: #BCBABD;
+$grey10: #ABA9AD;
+$grey9: #9A989C;
+$grey8: #89878C;
+$grey7: #79757B;
+$grey6: #68646B;
+$grey5: #57535A;
+$grey4: #4E4B51;
+$grey3: #3D3A3F;
+$grey2: #2C2A2D;
+$grey1: #1A191B;
 $black: #000000;
 
+$contextual-colors: (
+    ('primary', $primary, $primary),
+    ('secondary', $secondary, $secondary),
+    ('success', $success, $success-bg),
+    ('info', $info, $info-bg),
+    ('warning', $warning, $warning-bg),
+    ('error', $error, $error-bg),
+);
+
+$sizes: ('xsmall'),('small'),('medium'),('large');
+
 /* Typography */
-$large-font-size: 16px;
-$default-font-size: 14px;
-$small-font-size: 12px;
-$xsmall-font-size: 9px;
+$font-size-large: 16px;
+$font-size-medium: 14px;
+$font-size-small: 12px;
+$font-size-xsmall: 9px;
+
+/* Default Padding */
+$padding-large: 8px 16px;
+$padding-medium: 6px 12px;
+$padding-small: 4px 9px;
+$padding-xsmall: 2px 6px;
+
+/* Borders and Radiuses */
+$border-radius-default: 3px;

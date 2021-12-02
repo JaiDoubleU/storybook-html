@@ -1,0 +1,52 @@
+@import "variables";
+
+.text-default {
+    font-size: $font-size-medium!important;
+    line-height: 1.4 !important;
+}
+
+.text-default-bold {
+    font-size: $font-size-medium!important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+.text-small {
+    font-size: $font-size-small !important;
+    line-height: 1.4 !important;
+}
+
+.text-small-bold {
+    font-size: $font-size-small !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+.text-xsmall {
+    font-size: $font-size-xsmall !important;
+    line-height: 1.4 !important;
+}
+
+.text-xsmall-bold {
+    font-size: $font-size-xsmall !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+.text-large {
+    font-size: $font-size-large !important;
+    line-height: 1.4 !important;
+}
+
+.text-large-bold {
+    font-size: $font-size-large !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+/* text colors */
+@each $name, $value, $bg in $contextual-colors {
+    .text-#{$name} {
+        color: "#{$value}";
+    }
+}

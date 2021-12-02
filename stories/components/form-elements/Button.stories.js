@@ -1,15 +1,12 @@
-import '../../../node_modules/sourceoftruth/css/styles.min.css';
+// import '../../../node_modules/sourceoftruth/css/styles.min.css';
+import '../../css/styles.min.css';
 
-import {
-  addDecorator
-} from '@storybook/html';
-import {
-  withDesign
-} from 'storybook-addon-designs'
+import {  addDecorator } from '@storybook/html';
+import {  withDesign } from 'storybook-addon-designs'
+import { withA11y } from '@storybook/addon-a11y';
+import { cssresources } from '@storybook/addon-cssresources';
 
-import {
-  withA11y
-} from '@storybook/addon-a11y';
+
 addDecorator(withA11y)
 
 
@@ -25,7 +22,7 @@ export default {
     size: {
       control: {
         type: 'select',
-        options: ['small', 'default', 'large']
+        options: ['small', 'medium', 'large']
       },
     },
     icon: {
@@ -51,7 +48,7 @@ const Template = ({ label, ...args }) => {
 export const PrimaryBtn = Template.bind({});
 PrimaryBtn.args = {
   label: 'Button',
-  size: 'default',
+  size: 'medium',
   variant: 'primary', 
 };
 
@@ -59,14 +56,14 @@ export const SecondaryBtn = Template.bind({});
 SecondaryBtn.args = {
   label: 'Button',
   variant: 'secondary',
-  size: 'default',
+  size: 'medium',
 };
 
 export const LinkBtn = Template.bind({});
 LinkBtn.args = {
   label: 'Button',
   variant: 'link',
-  size: 'default',
+  size: 'medium',
 };
 LinkBtn.parameters = {
   a11y: {
@@ -83,13 +80,27 @@ LinkBtn.parameters = {
 export const ErrorBtn = Template.bind({});
 ErrorBtn.args = {
   label: 'Button',
-  variant: 'danger',
-  size: 'default',
+  variant: 'error',
+  size: 'medium',
 };
 
 export const YellowBtn = Template.bind({});
 YellowBtn.args = {
   label: 'Button',
   variant: 'warning',
-  size: 'default',
+  size: 'medium',
+};
+
+export const smallBtn = Template.bind({});
+smallBtn.args = {
+  label: 'Button',
+  variant: 'secondary',
+  size: 'small',
+};
+
+export const largeBtn = Template.bind({});
+largeBtn.args = {
+  label: 'Button',
+  variant: 'secondary',
+  size: 'large',
 };

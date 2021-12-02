@@ -1,14 +1,17 @@
 import '../stories/css/styleguide.css';
 import '../stories/css/styles.min.css';
-import '../node_modules/sourceoftruth/css/styles.min.css';
+// import '../node_modules/sourceoftruth/css/styles.min.css';
 
 import { addons } from '@storybook/addons';
 import { withCssResources } from '@storybook/addon-cssresources';
 import enverusTheme from './enverusTheme';
-
+ 
+// global
 addons.setConfig({
+  initialActive: 'sidebar',
   theme: enverusTheme,
   showPanel: true,
+  showNav: true,
   panelPosition: "bottom"
 });
 
@@ -55,7 +58,7 @@ export const parameters = {
   options: {
     storySort: {
       method: 'alphabetical',
-      order: ['Getting Started','Tokens','Introduction', 'Roadmap', 'Components'],
+      order: ['Introduction', 'Roadmap', 'Getting Started','Guidelines',  'Tokens', 'Components'],
     },
   },
 };

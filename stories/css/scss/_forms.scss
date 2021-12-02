@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins/forms";
+
+label {
+    color: #fff;
+}
+
+label[required=true]:before {
+    color: $error-bg;
+    content: "*";
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 0.75;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+input {
+    background-color: #4e4b51;
+    border: none;
+    border-radius: $border-radius-default;
+    display: block;
+    padding: 6px 12px;
+    width: 100%;
+}
+
+input[type='color'] {
+    background-color: transparent;
+    height: 2rem;
+    padding: 0;
+    width: 2rem;
+}
+
+input[has-error] {
+    border: 1px solid $error;
+    color: $error;
+}
+
+@each $size in $sizes {
+    .input-#{$size} {
+        @include input($size);
+    }
+}

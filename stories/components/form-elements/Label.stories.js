@@ -1,5 +1,6 @@
 import { addDecorator} from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
+import '../../css/styles.min.css';
 
 addDecorator(withA11y)
 

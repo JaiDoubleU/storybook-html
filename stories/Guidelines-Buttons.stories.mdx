@@ -1,0 +1,102 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { storiesOf, addDecorator } from "@storybook/html";
+
+<Meta title="Guidelines/Button Usage" />
+
+# Button Usage
+
+Buttons are the principle indicatiors of the actions available to users on a page. The different variants can help indicate the level of importance between various actions.  So when to use what button?
+
+Primary vs Secondary Buttons
+
+<div className="link-list single-row">
+  <div  className="link-item flex-container">
+    <span className="flex-child">
+      <span class="subheading">Primary Buttons</span>
+      <div>Primary buttons should be used  to encourage the most common action you want visitors to take on any given page.</div>
+    </span>
+    <span>
+      <button className=" button button-primary ">Primary</button>
+    </span>
+  </div>
+
+  <div  className="link-item flex-container">
+    <span className="flex-child">
+      <span class="subheading">Secondary Buttons</span>
+      <div>Secondary buttons should be thought of as the default style of button in an
+      application. They should be used for secondary page actions or utility
+      functions.</div>
+    </span>
+    <span>
+      <button className=" button button-secondary ">Secondary</button>
+    </span>
+  </div>
+</div>
+
+Contextual Buttons
+
+<div className="link-list">
+  <div
+    className="link-item flex-container"
+    href=""
+    target="_blank"
+  >
+    <span className="flex-child">
+      <span class="subheading">Info Buttons</span>
+      <div>
+      Info buttons should be used in informational alert or modal dialogs to provide additional emphasis for the type of message being delivered.
+      </div>
+    </span>
+    <span>
+      <button className=" button button-info ">Info</button>
+    </span>
+  </div>
+ <div
+    className="link-item flex-container"
+    href=""
+    target="_blank"
+  >
+    <span className="flex-child">
+      <span class="subheading">Success Buttons</span>
+      <div>
+        Success buttons can be used to indicate a successful condition or positive action that advances the user to a next step.  It can also be used in success alert or modal dialogs when interaction is required by the user to dismiss or respond to the alert.
+      </div>
+    </span>
+    <span>
+      <button className=" button button-success ">Success</button>
+    </span>
+  </div>
+  <div
+    className="link-item flex-container"
+    href=""
+    target="_blank">
+    <span className="flex-child">
+      <span class="subheading">Warning Buttons</span>
+      <div>
+      Warning buttons should be used in warning type alert or modal dialogs emphasize the severity of the warning  message being delivered.
+      </div>
+    </span>
+    <span>
+      <button className=" button button-warning ">Warning</button>
+    </span>
+  </div>
+    <div
+    className="link-item flex-container"
+    href=""
+    target="_blank">
+    <span className="flex-child">
+      <span class="subheading">Error Buttons</span>
+      <div>
+            Error buttons should be used in error type alert or modal dialogs emphasize a high level of severity for the message being delivered.
+      </div>
+    </span>
+    <span>
+      <button className=" button  button-error ">Error</button>
+    </span>
+  </div>
+</div>
+
+<div className="tip-wrapper">
+	<span className="tip">Tip</span>Edit the Markdown in{" "}
+	<code>src/stories/Guidelines-Buttons.stories.mdx</code>
+</div>

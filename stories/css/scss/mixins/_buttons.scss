@@ -1,0 +1,25 @@
+@mixin button($size) {
+    @if $size==xsmall {
+        font-size: $font-size-xsmall;
+        padding: $padding-xsmall;
+    }
+
+    @else if $size==small {
+        font-size: $font-size-small;
+        padding: $padding-small;
+    }
+
+    @else if $size==medium {
+        font-size: $font-size-medium;
+        padding: $padding-medium;
+    }
+
+    @else if $size==large {
+        font-size: $font-size-large;
+        padding: $padding-large;
+    }
+
+    @else {
+        @error "Unknown size #{$size}.";
+    }
+}

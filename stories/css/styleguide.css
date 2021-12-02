@@ -30,11 +30,29 @@ body {
 	margin-top: 40px;
 }
 
+.flex-container {
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	padding: 20px 30px 20px 15px;
+}
+
+.flex-child {
+	flex: 1;
+}
+
 .link-list {
 	display: grid;
-	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	row-gap: 10px;
+	column-gap: 15px;
+}
+
+.link-list.single-row {
+		grid-template-rows: 1fr;
+		margin-bottom: 1rem;
 }
 
 @media (min-width: 620px) {
@@ -91,7 +109,7 @@ body {
 
 .link-item span {
 	font-size: 14px;
-	line-height: 20px;
+	/* line-height: 20px; */
 }
 
 .tip {

@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins/buttons";
+
+.button {
+    color: $black;
+    background-color: $grey12;
+    border-radius: $border-radius-default;
+}
+
+@each $name, $value, $bg in $contextual-colors {
+    .button-#{$name} {
+        background-color: #{$value};
+
+        &:hover,
+        &:active,
+        &.active {
+            background-color: lighten($value, 10%);
+            color: $black;
+        }
+    }
+}
+
+@each $size in $sizes {
+    .button-#{$size} {
+        @include button($size);
+    }
+}
+
+ 
